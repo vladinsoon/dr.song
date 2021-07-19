@@ -1,0 +1,16 @@
+body {
+  font: 400 20px/1.4 'Arno';
+}
+
+html {
+  font-size: .8810vw;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(1342px + 30px);
+  padding: 0 15px;
+  margin: 0 auto;
+  z-index: 4;
+}

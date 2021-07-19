@@ -1,0 +1,583 @@
+/*color*/
+/*fonts*/
+/*effects*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+  outline: 0; }
+
+button, button:active, button:focus {
+  outline: none; }
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit; }
+
+table {
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+strong {
+  font-weight: bold; }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+.clear {
+  display: table;
+  content: '';
+  clear: both; }
+
+/*_Font_*/
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../fonts/Avenir Medium/Avenir-Medium.eot");
+  src: url("../../fonts/Avenir Medium/Avenir-Medium.eot") format("embedded-opentype"), url("../../fonts/Avenir Medium/Avenir-Medium.woff2") format("woff2"), url("../../fonts/Avenir Medium/Avenir-Medium.woff") format("woff"), url("../../fonts/Avenir Medium/Avenir-Medium.ttf") format("truetype"), url("../../fonts/Avenir Medium/Avenir-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../fonts/Avenir Medium/Avenir-Medium.eot");
+  src: url("../../fonts/Avenir Medium/Avenir-Medium.eot") format("embedded-opentype"), url("../../fonts/Avenir Medium/Avenir-Medium.woff2") format("woff2"), url("../../fonts/Avenir Medium/Avenir-Medium.woff") format("woff"), url("../../fonts/Avenir Medium/Avenir-Medium.ttf") format("truetype"), url("../../fonts/Avenir Medium/Avenir-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Tamil MN';
+  src: url("../../fonts/Tamil MN/TamilMN.eot");
+  src: url("../../fonts/Tamil MN/TamilMN.eot") format("embedded-opentype"), url("../../fonts/Tamil MN/TamilMN.woff2") format("woff2"), url("../../fonts/Tamil MN/TamilMN.woff") format("woff"), url("../../fonts/Tamil MN/TamilMN.ttf") format("truetype"), url("../../fonts/Tamil MN/TamilMN.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Arno';
+  src: url("../../fonts/Arno Bold Italic/ArnoPro-BoldItalic.eot");
+  src: url("../../fonts/Arno Bold Italic/ArnoPro-BoldItalic.eot") format("embedded-opentype"), url("../../fonts/Arno Bold Italic/ArnoPro-BoldItalic.woff2") format("woff2"), url("../../fonts/Arno Bold Italic/ArnoPro-BoldItalic.woff") format("woff"), url("../../fonts/Arno Bold Italic/ArnoPro-BoldItalic.ttf") format("truetype"), url("../../fonts/Arno Bold Italic/ArnoPro-BoldItalic.svg") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Arno';
+  src: url("../../fonts/Arno Italic/ArnoPro-Italic.eot");
+  src: url("../../fonts/Arno Italic/ArnoPro-Italic.eot") format("embedded-opentype"), url("../../fonts/Arno Italic/ArnoPro-Italic.woff2") format("woff2"), url("../../fonts/Arno Italic/ArnoPro-Italic.woff") format("woff"), url("../../fonts/Arno Italic/ArnoPro-Italic.ttf") format("truetype"), url("../../fonts/Arno Italic/ArnoPro-Italic.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Arno';
+  src: url("../../fonts/Arno Regular/ArnoPro-Regular.eot");
+  src: url("../../fonts/Arno Regular/ArnoPro-Regular.eot") format("embedded-opentype"), url("../../fonts/Arno Regular/ArnoPro-Regular.woff2") format("woff2"), url("../../fonts/Arno Regular/ArnoPro-Regular.woff") format("woff"), url("../../fonts/Arno Regular/ArnoPro-Regular.ttf") format("truetype"), url("../../fonts/Arno Regular/ArnoPro-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+body {
+  font: 400 1.25rem/1.4 'Arno'; }
+
+html {
+  font-size: .8810vw;
+  scroll-behavior: smooth; }
+
+.container {
+  width: 100%;
+  max-width: calc(83.875rem + 1.875rem);
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+  z-index: 4; }
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.375rem 3.125rem 3.125rem; }
+  .header .container {
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.header_info {
+  position: absolute;
+  top: 50%;
+  right: 3.125rem;
+  transform: translateY(-50%); }
+
+.header_logo {
+  position: relative;
+  width: 100%;
+  max-width: 10rem;
+  height: auto; }
+  .header_logo img {
+    position: relative;
+    width: 100%; }
+
+.nav a {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative; }
+  .nav a:hover:before {
+    opacity: 1;
+    transform: translateY(0rem); }
+  .nav a:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    content: '';
+    background: #000000;
+    opacity: 0;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+    transform: translateY(-0.3125rem); }
+
+.primary_btn {
+  border: 0.125rem solid #607BB4;
+  background: #fff;
+  padding: 0.8125rem 4.5625rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  transition: background .4s ease-in-out; }
+  .primary_btn:hover {
+    background: #607BB4; }
+    .primary_btn:hover span {
+      color: #fff; }
+  .primary_btn span {
+    font-family: 'Tamil MN', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    letter-spacing: -0.015em;
+    color: #607BB4;
+    text-align: center;
+    transition: color .4s ease-in-out; }
+  .primary_btn.white_btn {
+    padding: 0.8125rem 2.1875rem;
+    border: 0.125rem solid #FFFFFF;
+    background: transparent; }
+    .primary_btn.white_btn:hover {
+      background: #fff; }
+      .primary_btn.white_btn:hover span {
+        color: #000; }
+    .primary_btn.white_btn span {
+      color: #FFFFFF; }
+
+.main_fs {
+  position: relative;
+  width: 100%;
+  height: 49.4375rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .main_fs .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+  .main_fs .main_fs--text p {
+    font-family: 'Tamil MN', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF; }
+    .main_fs .main_fs--text p span {
+      display: block;
+      font-family: 'Arno', serif;
+      font-weight: 700;
+      font-size: 3.125rem;
+      font-style: italic;
+      line-height: 2.9375rem;
+      letter-spacing: 0.0625rem; }
+  .main_fs .main_fs--image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+    .main_fs .main_fs--image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1; }
+
+.profit {
+  padding: 5.5rem 0 5.875rem;
+  position: relative; }
+  .profit .profit_title {
+    font-family: 'Arno', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 95%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 4.25rem;
+    text-align: center; }
+  .profit .profit_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto; }
+  .profit .profit_item {
+    width: calc(33% - 11.25rem);
+    padding: 1.25rem 0;
+    position: relative;
+    margin: 0 5.625rem; }
+    .profit .profit_item:before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      background: #000000;
+      height: 0.0625rem;
+      content: ''; }
+    .profit .profit_item:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      background: #000000;
+      height: 0.0625rem;
+      content: ''; }
+    .profit .profit_item p {
+      font-family: 'Arno', serif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.625rem;
+      line-height: 140%;
+      letter-spacing: 0.01em;
+      color: #000000;
+      text-align: center; }
+
+.skin {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 6.125rem; }
+
+.skin_img {
+  position: relative;
+  width: 100%;
+  height: 32.75rem;
+  overflow: hidden;
+  padding: 6.3125rem 2.9375rem; }
+  .skin_img .skin_text {
+    position: relative;
+    z-index: 2; }
+    .skin_img .skin_text p {
+      font-family: 'Arno', serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 3.125rem;
+      line-height: 95%;
+      letter-spacing: 0.055em;
+      color: #FFFFFF; }
+  .skin_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; }
+
+.high {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 4.625rem; }
+  .high .high_wrap {
+    width: 100%;
+    max-width: 78.75rem;
+    margin: 0 auto;
+    display: flex; }
+  .high .high_left--img {
+    position: relative;
+    width: 55%;
+    height: auto; }
+    .high .high_left--img img {
+      position: relative;
+      width: 100%;
+      height: auto; }
+  .high .high_right {
+    width: 40%; }
+  .high .high_right--img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -10rem;
+    margin-left: -5.625rem; }
+    .high .high_right--img img {
+      position: relative;
+      width: 110%;
+      height: auto; }
+  .high .high_right--text {
+    padding-top: 3.875rem;
+    padding-left: 8rem;
+    padding-right: 3.75rem; }
+    .high .high_right--text p {
+      font-family: 'Tamil MN', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.875rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.005em;
+      color: #000000; }
+
+.mp_products {
+  position: relative;
+  margin-bottom: 4.625rem; }
+  .mp_products .primary_btn {
+    margin: 0 auto; }
+  .mp_products .mp_products--wrap {
+    display: flex;
+    flex-wrap: wrap; }
+  .mp_products .mp_products--item {
+    width: calc(33% - 2.5rem);
+    margin: 0 1.25rem 3.125rem;
+    position: relative; }
+    .mp_products .mp_products--item:hover .mp_products--item_img img {
+      transform: scale(1.1); }
+  .mp_products .mp_products--item_img {
+    position: relative;
+    width: 100%;
+    height: 21.25rem;
+    overflow: hidden;
+    margin-bottom: 1.25rem; }
+    .mp_products .mp_products--item_img img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      transition: transform .4s ease-in-out; }
+  .mp_products .mp_products--item_name {
+    text-align: center;
+    width: 100%;
+    max-width: 14.25rem;
+    margin: 0 auto; }
+    .mp_products .mp_products--item_name p {
+      font-family: 'Arno', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.25rem;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      color: #6B6B6B; }
+
+.banner {
+  position: relative;
+  margin-bottom: 2.875rem; }
+  .banner .banner_wrap {
+    width: 100%;
+    height: 36.875rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .banner .banner_wrap .banner_text {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 22.25rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .banner .banner_wrap .banner_text p {
+        font-family: 'Tamil MN', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.25rem;
+        line-height: 2.875rem;
+        text-align: center;
+        letter-spacing: 0.005em;
+        color: #FFFFFF;
+        margin-bottom: 3.125rem; }
+    .banner .banner_wrap img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1; }
+
+.reviews {
+  padding: 3.5rem 0 4.25rem;
+  position: relative;
+  background: #E8F2F9;
+  margin-bottom: 1.625rem; }
+  .reviews .reviews_title {
+    font-family: 'Tamil MN', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3.0625rem;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 3.75rem;
+    text-align: center; }
+  .reviews .reviews_wrap {
+    display: flex;
+    flex-wrap: wrap; }
+  .reviews .reviews_item {
+    padding: 1.875rem 2.125rem;
+    background: #fff;
+    width: calc(33% - 1.875rem);
+    margin: 0 0.9375rem 1.875rem;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    .reviews .reviews_item .reviews_item--stars {
+      margin-bottom: 1.125rem;
+      align-self: flex-end;
+      position: relative;
+      width: 5.0625rem;
+      height: 1.0625rem;
+      background-image: url("/img/stars.svg");
+      background-size: contain; }
+    .reviews .reviews_item .reviews_item--title {
+      font-family: 'Arno', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      letter-spacing: -0.015em;
+      color: #000000;
+      margin-bottom: 0.125rem; }
+    .reviews .reviews_item .reviews_item--author span, .reviews .reviews_item .reviews_item--date span {
+      font-family: 'Avenir', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.125rem;
+      line-height: 1.5625rem;
+      letter-spacing: -0.015em;
+      color: #9E9E9E; }
+    .reviews .reviews_item .reviews_item--text {
+      margin-top: 0.625rem; }
+      .reviews .reviews_item .reviews_item--text p {
+        font-family: 'Arno';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        letter-spacing: 0.02em;
+        color: #000000; }
+
+.images_list {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .images_list .images_list--item {
+    position: relative;
+    width: 25%; }
+    .images_list .images_list--item .images_list--item_img {
+      position: relative;
+      width: calc(100% - 1.625rem);
+      height: 19.4375rem;
+      overflow: hidden;
+      margin: 0 0.8125rem; }
+      .images_list .images_list--item .images_list--item_img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .images_list .images_list--item .images_list--item_text {
+      margin-top: 1.625rem;
+      width: 100%;
+      background: #EEF8E9;
+      padding: 2.1875rem 0; }
+      .images_list .images_list--item .images_list--item_text p {
+        font-family: 'Tamil MN', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: #000000;
+        text-align: center; }
+
+.footer {
+  position: relative;
+  padding: 5.625rem 0; }
+  .footer .container {
+    display: flex;
+    flex-direction: column; }
+  .footer .footer_logo {
+    margin-bottom: 3.75rem; }
+    .footer .footer_logo img {
+      position: relative;
+      width: 7.3125rem;
+      height: auto; }
+  .footer .footer_nav {
+    display: flex;
+    align-items: center; }
+    .footer .footer_nav a {
+      font-family: 'Avenir', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.125rem;
+      line-height: 1.5625rem;
+      letter-spacing: -0.015em;
+      color: #000000;
+      margin-right: 5rem; }
+      .footer .footer_nav a:last-child {
+        margin-right: 0; }
+
+/*# sourceMappingURL=main.css.map */

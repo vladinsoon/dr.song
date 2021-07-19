@@ -1,0 +1,72 @@
+/*_Font_*/
+@font-face {
+  font-family: 'Avenir';
+  src: urlCss('fonts/Avenir Medium/Avenir-Medium.eot');
+  src: urlCss('fonts/Avenir Medium/Avenir-Medium.eot') format('embedded-opentype'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.woff2') format('woff2'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.woff') format('woff'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.ttf') format('truetype'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: urlCss('fonts/Avenir Medium/Avenir-Medium.eot');
+  src: urlCss('fonts/Avenir Medium/Avenir-Medium.eot') format('embedded-opentype'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.woff2') format('woff2'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.woff') format('woff'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.ttf') format('truetype'),
+  urlCss('fonts/Avenir Medium/Avenir-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tamil MN';
+  src: urlCss('fonts/Tamil MN/TamilMN.eot');
+  src: urlCss('fonts/Tamil MN/TamilMN.eot') format('embedded-opentype'),
+  urlCss('fonts/Tamil MN/TamilMN.woff2') format('woff2'),
+  urlCss('fonts/Tamil MN/TamilMN.woff') format('woff'),
+  urlCss('fonts/Tamil MN/TamilMN.ttf') format('truetype'),
+  urlCss('fonts/Tamil MN/TamilMN.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arno';
+  src: urlCss('fonts/Arno Bold Italic/ArnoPro-BoldItalic.eot');
+  src: urlCss('fonts/Arno Bold Italic/ArnoPro-BoldItalic.eot') format('embedded-opentype'),
+  urlCss('fonts/Arno Bold Italic/ArnoPro-BoldItalic.woff2') format('woff2'),
+  urlCss('fonts/Arno Bold Italic/ArnoPro-BoldItalic.woff') format('woff'),
+  urlCss('fonts/Arno Bold Italic/ArnoPro-BoldItalic.ttf') format('truetype'),
+  urlCss('fonts/Arno Bold Italic/ArnoPro-BoldItalic.svg') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Arno';
+  src: urlCss('fonts/Arno Italic/ArnoPro-Italic.eot');
+  src: urlCss('fonts/Arno Italic/ArnoPro-Italic.eot') format('embedded-opentype'),
+  urlCss('fonts/Arno Italic/ArnoPro-Italic.woff2') format('woff2'),
+  urlCss('fonts/Arno Italic/ArnoPro-Italic.woff') format('woff'),
+  urlCss('fonts/Arno Italic/ArnoPro-Italic.ttf') format('truetype'),
+  urlCss('fonts/Arno Italic/ArnoPro-Italic.svg') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Arno';
+  src: urlCss('fonts/Arno Regular/ArnoPro-Regular.eot');
+  src: urlCss('fonts/Arno Regular/ArnoPro-Regular.eot') format('embedded-opentype'),
+  urlCss('fonts/Arno Regular/ArnoPro-Regular.woff2') format('woff2'),
+  urlCss('fonts/Arno Regular/ArnoPro-Regular.woff') format('woff'),
+  urlCss('fonts/Arno Regular/ArnoPro-Regular.ttf') format('truetype'),
+  urlCss('fonts/Arno Regular/ArnoPro-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

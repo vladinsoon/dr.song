@@ -1,0 +1,39 @@
+.footer {
+  position: relative;
+  padding: 90px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_logo {
+    margin-bottom: 60px;
+
+    img {
+      position: relative;
+      width: 117px;
+      height: auto;
+    }
+  }
+
+  .footer_nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-family: 'Avenir', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -0.015em;
+      color: #000000;
+      margin-right: 80px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
