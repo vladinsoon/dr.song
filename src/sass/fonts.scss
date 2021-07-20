@@ -24,13 +24,13 @@
 }
 
 @font-face {
-  font-family: 'Tamil MN';
-  src: urlCss('fonts/Tamil MN/TamilMN.eot');
-  src: urlCss('fonts/Tamil MN/TamilMN.eot') format('embedded-opentype'),
-  urlCss('fonts/Tamil MN/TamilMN.woff2') format('woff2'),
-  urlCss('fonts/Tamil MN/TamilMN.woff') format('woff'),
-  urlCss('fonts/Tamil MN/TamilMN.ttf') format('truetype'),
-  urlCss('fonts/Tamil MN/TamilMN.svg') format('svg');
+  font-family: 'Optima';
+  src: urlCss('fonts/Optima/Optima.eot');
+  src: urlCss('fonts/Optima/Optima.eot') format('embedded-opentype'),
+  urlCss('fonts/Optima/Optima.woff2') format('woff2'),
+  urlCss('fonts/Optima/Optima.woff') format('woff'),
+  urlCss('fonts/Optima/Optima.ttf') format('truetype'),
+  urlCss('fonts/Optima/Optima.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }

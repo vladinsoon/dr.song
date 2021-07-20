@@ -3,11 +3,13 @@
 @import "сomponents-sass/mixin";
 @import "reset";
 @import "fonts";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "common";
 @import "header";
 @import "main-page";
+@import "shop";
+@import "about";
+@import "product";
 @import "footer";
-
-
 
 @import "media";

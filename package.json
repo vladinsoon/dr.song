@@ -40,6 +40,7 @@
     "webpack": "^4.16.5"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "flatpickr": "^4.5.1",
     "scroll-parallax": "^2.1.0",
     "scrollreveal": "^4.0.9",

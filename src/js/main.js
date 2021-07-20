@@ -2,11 +2,18 @@
 
 import ScrollReveal from 'scrollreveal';
 import simpleParallax from 'simple-parallax-js';
+import Glide from '@glidejs/glide'
 
 
 //Parallax effect
 const parallaxImages = document.querySelectorAll('.parallax');
 const parallaxImagesNoScale = document.querySelectorAll('.parallax-no-scale');
+
+
+//Variables
+const productImgLength = document.querySelectorAll('.product_main--center img').length;
+const bulletWrap = document.querySelector('.glide__bullets');
+
 
 new simpleParallax(parallaxImages, {
     delay: 0,
@@ -61,3 +68,18 @@ function animation() {
 
 animation();
 
+if (productImgLength > 0) {
+    for (let i = 0; i < productImgLength; i++) {
+        const bulletDiv = document.createElement('div');
+        bulletDiv.classList.add('glide__bullet');
+        bulletDiv.setAttribute('data-glide-dir', `=${i}`);
+        bulletWrap.appendChild(bulletDiv);
+    }
+}
+
+const glide = new Glide('.product_main--image', {
+    perView: 1,
+    animationDuration: 500
+})
+
+glide.mount();
