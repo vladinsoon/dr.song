@@ -5684,6 +5684,23 @@ const parallaxImagesNoScale = document.querySelectorAll('.parallax-no-scale');
 //Variables
 const productImgLength = document.querySelectorAll('.product_main--center img').length;
 const bulletWrap = document.querySelector('.glide__bullets');
+const btnIngredientsMore = document.querySelector('.btn_ingredients--more');
+const ingredientsList = document.querySelector('.product_ingredients--list');
+
+
+if (btnIngredientsMore && ingredientsList) {
+    btnIngredientsMore.addEventListener('click', e => {
+        e.preventDefault();
+        if (ingredientsList.classList.contains('active')) {
+            ingredientsList.style.maxHeight = `90px`;
+            btnIngredientsMore.querySelector('span').innerHTML = 'See full ingredients'
+        } else {
+            ingredientsList.style.maxHeight = `${ingredientsList.querySelector('ul').offsetHeight}px`;
+            btnIngredientsMore.querySelector('span').innerHTML = 'Hide ingredients'
+        }
+        ingredientsList.classList.toggle('active');
+    })
+}
 
 
 new simple_parallax_js__WEBPACK_IMPORTED_MODULE_1___default.a(parallaxImages, {
