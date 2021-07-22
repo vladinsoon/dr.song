@@ -566,66 +566,69 @@ input::-webkit-inner-spin-button {
 
 .product_reviews {
   margin-bottom: 158px;
-}
 
-.reviews_box {
-  width: 100%;
-  transition: max-height .4s ease-in-out;
-  overflow: hidden;
-
-  &.active {
+  .reviews_box {
+    width: 100%;
     transition: max-height .4s ease-in-out;
+    overflow: hidden;
+
+    &.active {
+      transition: max-height .4s ease-in-out;
+    }
+
+    .reviews_item {
+      width: 100%;
+      display: flex;
+      margin-top: 50px;
+      padding-bottom: 50px;
+      border-bottom: 2px solid #607BB4;
+
+      .reviews_item--left_box {
+        width: 100%;
+        max-width: 206px;
+        margin-right: 66px;
+      }
+
+      .reviews_item--text_box {
+        width: 100%;
+        max-width: 803px;
+
+        p {
+          font-family: 'Avenir', serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: -0.015em;
+          color: #000000;
+        }
+      }
+
+      .reviews_item--author {
+        span {
+          display: block;
+          font-family: 'Avenir', serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: -0.015em;
+          color: #838383;
+        }
+      }
+
+      .reviews_item--stars {
+        position: relative;
+        margin-top: 25px;
+        background-image: url("/img/stars-blue.svg");
+        background-size: contain;
+        width: 81px;
+        height: 17px;
+        display: block;
+      }
+    }
   }
 }
 
-.reviews_item {
-  width: 100%;
-  display: flex;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  border-bottom: 2px solid #607BB4;
 
-  .reviews_item--left_box {
-    width: 100%;
-    max-width: 206px;
-    margin-right: 66px;
-  }
 
-  .reviews_item--text_box {
-    width: 100%;
-    max-width: 803px;
-
-    p {
-      font-family: 'Avenir', serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 25px;
-      letter-spacing: -0.015em;
-      color: #000000;
-    }
-  }
-
-  .reviews_item--author {
-    span {
-      display: block;
-      font-family: 'Avenir', serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 25px;
-      letter-spacing: -0.015em;
-      color: #838383;
-    }
-  }
-
-  .reviews_item--stars {
-    position: relative;
-    margin-top: 25px;
-    background-image: url("/img/stars-blue.svg");
-    background-size: contain;
-    width: 81px;
-    height: 17px;
-    display: block;
-  }
-}

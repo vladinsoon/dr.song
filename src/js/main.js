@@ -11,6 +11,7 @@ const parallaxImagesNoScale = document.querySelectorAll('.parallax-no-scale');
 
 
 //Variables
+const productSlider = document.querySelector('.product_main--image');
 const productImgLength = document.querySelectorAll('.product_main--center img').length;
 const bulletWrap = document.querySelector('.glide__bullets');
 
@@ -20,6 +21,36 @@ const ingredientsList = document.querySelector('.product_ingredients--list');
 const btnReviewsMore = document.querySelector('.load_more_reviews');
 const reviewsList = document.querySelector('.reviews_box');
 
+const countPlus = document.querySelector('.product_main--count_plus');
+const countMinus = document.querySelector('.product_main--count_minus');
+const countInput = document.querySelector('.product_main--count input');
+let countValue = null;
+
+if (countInput) {
+    countValue = countInput.value || 1;
+}
+
+
+if (countPlus) {
+    countPlus.addEventListener('click', e => {
+        e.preventDefault();
+        countValue++;
+        countInput.value = countValue;
+    })
+}
+
+if (countMinus) {
+    countMinus.addEventListener('click', e => {
+        e.preventDefault();
+        if (countInput.value <= 1) {
+            countValue = 1;
+            countInput.value = 1;
+        } else {
+            countValue--;
+        }
+        countInput.value = countValue;
+    })
+}
 
 if (btnIngredientsMore && ingredientsList) {
     const listArr = ingredientsList.querySelectorAll('ul li');
@@ -130,9 +161,13 @@ if (productImgLength > 0) {
     }
 }
 
-const glide = new Glide('.product_main--image', {
-    perView: 1,
-    animationDuration: 500
-})
 
-glide.mount();
+if (productSlider) {
+    const glide = new Glide(productSlider, {
+        perView: 1,
+        animationDuration: 500
+    })
+
+    glide.mount();
+}
+

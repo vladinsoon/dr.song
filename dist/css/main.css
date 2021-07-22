@@ -1166,52 +1166,50 @@ input::-webkit-inner-spin-button {
 
 .product_reviews {
   margin-bottom: 9.875rem; }
-
-.reviews_box {
-  width: 100%;
-  transition: max-height .4s ease-in-out;
-  overflow: hidden; }
-  .reviews_box.active {
-    transition: max-height .4s ease-in-out; }
-
-.reviews_item {
-  width: 100%;
-  display: flex;
-  margin-top: 3.125rem;
-  padding-bottom: 3.125rem;
-  border-bottom: 0.125rem solid #607BB4; }
-  .reviews_item .reviews_item--left_box {
+  .product_reviews .reviews_box {
     width: 100%;
-    max-width: 12.875rem;
-    margin-right: 4.125rem; }
-  .reviews_item .reviews_item--text_box {
-    width: 100%;
-    max-width: 50.1875rem; }
-    .reviews_item .reviews_item--text_box p {
-      font-family: 'Avenir', serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.125rem;
-      line-height: 1.5625rem;
-      letter-spacing: -0.015em;
-      color: #000000; }
-  .reviews_item .reviews_item--author span {
-    display: block;
-    font-family: 'Avenir', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    letter-spacing: -0.015em;
-    color: #838383; }
-  .reviews_item .reviews_item--stars {
-    position: relative;
-    margin-top: 1.5625rem;
-    background-image: url("/img/stars-blue.svg");
-    background-size: contain;
-    width: 5.0625rem;
-    height: 1.0625rem;
-    display: block; }
+    transition: max-height .4s ease-in-out;
+    overflow: hidden; }
+    .product_reviews .reviews_box.active {
+      transition: max-height .4s ease-in-out; }
+    .product_reviews .reviews_box .reviews_item {
+      width: 100%;
+      display: flex;
+      margin-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      border-bottom: 0.125rem solid #607BB4; }
+      .product_reviews .reviews_box .reviews_item .reviews_item--left_box {
+        width: 100%;
+        max-width: 12.875rem;
+        margin-right: 4.125rem; }
+      .product_reviews .reviews_box .reviews_item .reviews_item--text_box {
+        width: 100%;
+        max-width: 50.1875rem; }
+        .product_reviews .reviews_box .reviews_item .reviews_item--text_box p {
+          font-family: 'Avenir', serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.125rem;
+          line-height: 1.5625rem;
+          letter-spacing: -0.015em;
+          color: #000000; }
+      .product_reviews .reviews_box .reviews_item .reviews_item--author span {
+        display: block;
+        font-family: 'Avenir', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        letter-spacing: -0.015em;
+        color: #838383; }
+      .product_reviews .reviews_box .reviews_item .reviews_item--stars {
+        position: relative;
+        margin-top: 1.5625rem;
+        background-image: url("/img/stars-blue.svg");
+        background-size: contain;
+        width: 5.0625rem;
+        height: 1.0625rem;
+        display: block; }
 
 .footer {
   position: relative;
