@@ -1003,7 +1003,6 @@ input::-webkit-inner-spin-button {
     margin-top: 2.9375rem; }
   .product_ingredients .product_ingredients--list {
     width: 100%;
-    max-height: 6.875rem;
     margin-bottom: 4.5625rem;
     transition: max-height .4s ease-in-out;
     overflow: hidden; }
@@ -1073,49 +1072,146 @@ input::-webkit-inner-spin-button {
       height: 100%;
       object-fit: cover; }
 
-.product_apply .container {
+.product_apply {
+  margin-bottom: 7.5625rem; }
+  .product_apply .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .product_apply .product_apply--img {
+    position: relative;
+    max-width: 29.625rem;
+    width: 100%;
+    height: auto; }
+    .product_apply .product_apply--img img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+  .product_apply .product_apply--box {
+    width: 100%;
+    max-width: 32.1875rem;
+    margin-right: 10.75rem; }
+  .product_apply .product_apply--title {
+    font-family: 'Optima', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.015em;
+    color: #000000;
+    width: 100%;
+    border-bottom: 0.125rem solid #607BB4;
+    padding-bottom: 1.3125rem;
+    margin-bottom: 1.5625rem; }
+  .product_apply .product_apply--step {
+    font-family: 'Optima', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1875rem;
+    line-height: 155.94%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 2.4375rem; }
+
+.product_reviews .primary_btn {
+  margin-top: 2.5625rem; }
+
+.product_reviews .container {
+  max-width: 76.25rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center; }
 
-.product_apply .product_apply--img {
-  position: relative;
-  max-width: 29.625rem;
-  width: 100%;
-  height: auto; }
-  .product_apply .product_apply--img img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    object-fit: cover; }
-
-.product_apply .product_apply--box {
-  width: 100%;
-  max-width: 32.1875rem;
-  margin-right: 10.75rem; }
-
-.product_apply .product_apply--title {
+.product_reviews .product_reviews--title {
   font-family: 'Optima', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 2.25rem;
   line-height: 2.75rem;
+  text-align: center;
   letter-spacing: -0.015em;
   color: #000000;
-  width: 100%;
-  border-bottom: 0.125rem solid #607BB4;
-  padding-bottom: 1.3125rem;
-  margin-bottom: 1.5625rem; }
+  margin-bottom: 3.75rem; }
 
-.product_apply .product_apply--step {
-  font-family: 'Optima', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1875rem;
-  line-height: 155.94%;
-  letter-spacing: 0.02em;
-  color: #000000;
-  margin-bottom: 2.4375rem; }
+.product_reviews .reviews_top_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 3.125rem;
+  border-bottom: 0.125rem solid #607BB4; }
+
+.product_reviews .reviews_top_bar--summary {
+  display: flex;
+  align-items: center; }
+  .product_reviews .reviews_top_bar--summary span {
+    font-family: 'Avenir', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.0625rem;
+    line-height: 4.1875rem;
+    letter-spacing: -0.015em;
+    color: #628FBB; }
+  .product_reviews .reviews_top_bar--summary:after {
+    position: relative;
+    content: '';
+    background-image: url("/img/stars-blue.svg");
+    background-size: contain;
+    width: 5.0625rem;
+    height: 1.0625rem;
+    display: block;
+    margin-left: 2.8125rem; }
+
+.product_reviews {
+  margin-bottom: 9.875rem; }
+
+.reviews_box {
+  width: 100%;
+  transition: max-height .4s ease-in-out;
+  overflow: hidden; }
+  .reviews_box.active {
+    transition: max-height .4s ease-in-out; }
+
+.reviews_item {
+  width: 100%;
+  display: flex;
+  margin-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  border-bottom: 0.125rem solid #607BB4; }
+  .reviews_item .reviews_item--left_box {
+    width: 100%;
+    max-width: 12.875rem;
+    margin-right: 4.125rem; }
+  .reviews_item .reviews_item--text_box {
+    width: 100%;
+    max-width: 50.1875rem; }
+    .reviews_item .reviews_item--text_box p {
+      font-family: 'Avenir', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.125rem;
+      line-height: 1.5625rem;
+      letter-spacing: -0.015em;
+      color: #000000; }
+  .reviews_item .reviews_item--author span {
+    display: block;
+    font-family: 'Avenir', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.015em;
+    color: #838383; }
+  .reviews_item .reviews_item--stars {
+    position: relative;
+    margin-top: 1.5625rem;
+    background-image: url("/img/stars-blue.svg");
+    background-size: contain;
+    width: 5.0625rem;
+    height: 1.0625rem;
+    display: block; }
 
 .footer {
   position: relative;
