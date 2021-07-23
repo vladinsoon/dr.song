@@ -5697,6 +5697,19 @@ const countMinus = document.querySelector('.product_main--count_minus');
 const countInput = document.querySelector('.product_main--count input');
 let countValue = null;
 
+const header = document.querySelector('.header');
+
+if (header) {
+    window.addEventListener('scroll', e => {
+        if (window.scrollY > 100) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+    })
+}
+
+
 if (countInput) {
     countValue = countInput.value || 1;
 }
@@ -5841,7 +5854,6 @@ if (productSlider) {
 
     glide.mount();
 }
-
 
 
 /***/ }),

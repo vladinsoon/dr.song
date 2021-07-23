@@ -159,23 +159,49 @@ html {
   margin: 0 auto;
   z-index: 4; }
 
+body {
+  padding-top: 12.5rem; }
+
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2.375rem 3.125rem 3.125rem; }
+  padding: 2.375rem 3.125rem 3.125rem;
+  transition: all .4s ease-in-out;
+  z-index: 55; }
   .header .container {
     max-width: 40rem;
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  .header.fixed {
+    position: fixed;
+    padding: 0.9375rem 3.125rem;
+    background: #fff; }
+    .header.fixed .header_logo img:nth-child(1) {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0s ease-in-out, visibility 0s ease-in-out; }
+    .header.fixed .header_logo img:nth-child(2) {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      top: initial;
+      left: initial;
+      transform: initial; }
 
 .header_info {
   position: absolute;
   top: 50%;
   right: 3.125rem;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center; }
 
 .header_logo {
   position: relative;
@@ -184,7 +210,16 @@ html {
   height: auto; }
   .header_logo img {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    transition: opacity .4s ease-in-out, visibility .4s ease-in-out; }
+    .header_logo img:nth-child(2) {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0s ease-in-out, visibility 0s ease-in-out; }
 
 .nav a {
   font-family: 'Avenir';
@@ -210,6 +245,20 @@ html {
     opacity: 0;
     transition: transform .4s ease-in-out, opacity .4s ease-in-out;
     transform: translateY(-0.3125rem); }
+
+.header_account img {
+  width: 1.125rem;
+  height: auto;
+  position: relative; }
+
+.header_cart {
+  margin-left: 2.125rem;
+  position: relative; }
+  .header_cart img {
+    position: relative;
+    width: 1.125rem;
+    height: auto;
+    z-index: 1; }
 
 .primary_btn {
   border: 0.125rem solid #607BB4;
@@ -1252,5 +1301,13 @@ input::-webkit-inner-spin-button {
         opacity: 0;
         transition: transform .4s ease-in-out, opacity .4s ease-in-out;
         transform: translateY(-0.3125rem); }
+
+@media only screen and (max-width: 85rem) {
+  html {
+    font-size: 1rem; } }
+
+@media only screen and (orientation: portrait) {
+  html {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */
